@@ -1,0 +1,4 @@
+.content {
+    background-color: var(--paletteColor5);
+    border-top: 1px solid var(--paletteColor3);
+}

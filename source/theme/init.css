@@ -1,0 +1,10 @@
+@import 'reset-css';
+@import './palette';
+@import './globals';
+
+/* Components */
+@import './components/content';
+@import './components/header';
+@import './components/photo';
+@import './components/photos';
+@import './components/profile';

@@ -1,0 +1,12 @@
+.photos {
+    display: flex;
+    justify-content: center;
+    margin-top: 52px;
+
+    & .layout {
+        max-width: 935px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}

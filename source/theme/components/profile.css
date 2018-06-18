@@ -1,0 +1,51 @@
+.profile {
+    display: flex;
+    justify-content: center;
+
+    & .layout {
+        display: flex;
+        margin-top: 57px;
+        min-width: 930px;
+        box-sizing: initial;
+        border-bottom: 1px solid var(--paletteColor6);
+
+        & img {
+            width: 152px;
+            height: 152px;
+            border-radius: 50%;
+            margin-right: 95px;
+            margin-bottom: 45px;
+            margin-left: 70px;
+            cursor: pointer;
+        }
+
+        & div {
+            & .nickname {
+                font-size: 32px;
+                line-height: 40px;
+                font-weight: 200;
+                margin-top: 5px;
+                margin-bottom: 18px;
+            }
+
+            & .stats {
+                font-size: 20px;
+                margin-bottom: 20px;
+                padding-left: 3px;
+
+                & span:nth-child(odd) {
+                    font-weight: 500;
+                }
+
+                & span:nth-child(even) {
+                    margin-right: 30px;
+                }
+            }
+
+            & .name {
+                font-size: 20px;
+                font-weight: 500;
+            }
+        }
+    }
+}
