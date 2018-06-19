@@ -15,11 +15,6 @@ import photo14 from './photo-14';
 import photo15 from './photo-15';
 import photo16 from './photo-16';
 
-const url = photo1;
-const path = url.slice(0, url.indexOf('/photo'));
-
-export { path };
-
 export {
     photo1,
     photo2,
