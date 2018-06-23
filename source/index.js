@@ -17,7 +17,7 @@ const start = (
             fontSize:        24,
             fontWeight:      '600',
         } }>
-        Добро пожаловать!
+        Добро пожаловать на урок по React.
     </h1>
 );
 
