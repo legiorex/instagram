@@ -4,12 +4,12 @@
 
 ### Для запуска проекта выполни следующие шаги:
 
-1.  [Скачай и установи](https://nodejs.org/en/?utm_source=React+Trial+Online&utm_campaign=86043fabd2-EMAIL_CAMPAIGN_2018_05_02&utm_medium=email&utm_term=0_82d4295369-86043fabd2-/cm_linker_open_url&utm_source=React+Online+Trial&utm_campaign=c0519fd54f-EMAIL_CAMPAIGN_2018_06_26_08_42_COPY_01&utm_medium=email&utm_term=0_82d4295369-c0519fd54f-) последнюю LTS-версию Node.js.
-2.  Выполни в консоли node -v — убедись, что установлена последняя версия Node.js не старее `v8.11.3`.
-3.  Введи в консоли npm -v — убедись, что установлена последняя версия npm не старее `6.1.0`.
-4.  [Скачай и установи Git](https://git-scm.com/downloads?utm_source=React+Trial+Online&utm_campaign=86043fabd2-EMAIL_CAMPAIGN_2018_05_02&utm_medium=email&utm_term=0_82d4295369-86043fabd2-&utm_source=React+Online+Trial&utm_campaign=c0519fd54f-EMAIL_CAMPAIGN_2018_06_26_08_42_COPY_01&utm_medium=email&utm_term=0_82d4295369-c0519fd54f-), если его нет на компьютере.
+1.  [Скачай и установи](https://nodejs.org/en/) последнюю LTS-версию Node.js.
+2.  Выполни в консоли `node -v` — убедись, что установлена последняя версия Node.js не старее `v8.11.3`.
+3.  Введи в консоли `npm -v` — убедись, что установлена последняя версия npm не старее `6.1.0`.
+4.  [Скачай и установи Git](https://github.com/Lectrum/react-trial-lesson), если его нет на компьютере.
 5.  Введи `git --version` — проверь версию установленного Git, должно быть не ниже `2.16.3`.
-6.  Склонируй и запусти [проект](https://github.com/Lectrum/react-trial-lesson?utm_source=React+Online+Trial&utm_campaign=c0519fd54f-EMAIL_CAMPAIGN_2018_06_26_08_42_COPY_01&utm_medium=email&utm_term=0_82d4295369-c0519fd54f-): `git clone git@github.com:Lectrum/react-trial-lesson.git`
+6.  Склонируй и запусти этот проект: `git clone git@github.com:Lectrum/react-trial-lesson.git`
 7.  После клонирования выполни команду `cd react-trial-lesson`
 8.  Выполни команду `npm install`.
 9.  Самое время выполнить `npm start`.
