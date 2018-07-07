@@ -51,7 +51,7 @@ export const setupHtml = () => ({
         new HtmlWebpackPlugin({
             inject:   false,
             template: HtmlWebpackTemplate,
-            title:    'Пробный урок по React',
+            title:    'Воркшоп по React: Instagram',
             meta:     [
                 {
                     name:    'viewport',
