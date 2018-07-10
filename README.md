@@ -6,7 +6,7 @@
 <div align="center">
   <!-- Package version -->
     <img src="https://img.shields.io/github/package-json/v/Lectrum/react-trial-lesson.svg?longCache=true&style=flat-square"
-      alt="Package version" /
+      alt="Package version" />
   <!-- Last commit -->
     <img src="https://img.shields.io/github/last-commit/Lectrum/react-trial-lesson.svg?longCache=true&style=flat-square"
       alt="Last commit" />
