@@ -12,7 +12,7 @@ const start = (
             justifyContent:  'center',
             alignItems:      'center',
             minHeight:       '100vh',
-            backgroundColor: 'sienna',
+            backgroundColor: '#070A13',
             color:           'white',
             fontSize:        24,
             fontWeight:      '600',
