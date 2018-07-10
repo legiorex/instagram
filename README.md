@@ -1,12 +1,12 @@
 <h1 align="center">
-<a href="https://lectrum.io" target="_blank" rel="noopener noreferrer"> <img src="./static/favicon/favicon.1.svg" alt="Lectrum favicon" width="25" /></a> Воркшоп по React: Instagram</h1>
+<a href="https://lectrum.io" target="_blank" rel="noopener noreferrer"> <img src="./static/favicon/favicon.svg" alt="Lectrum favicon" width="25" /></a> Воркшоп по React: Instagram</h1>
 
 <br>
 
 <div align="center">
   <!-- Package version -->
     <img src="https://img.shields.io/github/package-json/v/Lectrum/react-trial-lesson.svg?longCache=true&style=flat-square"
-      alt="Package version" />
+      alt="Package version" /
   <!-- Last commit -->
     <img src="https://img.shields.io/github/last-commit/Lectrum/react-trial-lesson.svg?longCache=true&style=flat-square"
       alt="Last commit" />
