@@ -14,8 +14,9 @@ import photo13 from './photo-13';
 import photo14 from './photo-14';
 import photo15 from './photo-15';
 import photo16 from './photo-16';
+import photosData from './data';
 
-export {
+const photosMap = {
     photo1,
     photo2,
     photo3,
@@ -31,5 +32,10 @@ export {
     photo13,
     photo14,
     photo15,
-    photo16
+    photo16,
 };
+
+export const photos = photosData.map((photo) => ({
+    ...photo,
+    src: photosMap[photo.name],
+}));

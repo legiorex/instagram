@@ -1,50 +1,78 @@
+@import '../breakpoints';
+
 .profile {
     display: flex;
     justify-content: center;
+    margin: 57px auto 45px;
+    max-width: 930px;
+    border-bottom: 1px solid var(--paletteColor6);
 
-    & .layout {
-        display: flex;
-        margin-top: 57px;
-        min-width: 930px;
-        box-sizing: initial;
-        border-bottom: 1px solid var(--paletteColor6);
+    & img {
+        width: 152px;
+        height: 152px;
+        border-radius: 50%;
+        margin-right: 95px;
+        margin-left: 70px;
+        cursor: pointer;
+    }
 
-        & img {
-            width: 152px;
-            height: 152px;
-            border-radius: 50%;
-            margin-right: 95px;
-            margin-bottom: 45px;
-            margin-left: 70px;
-            cursor: pointer;
+    & div {
+        & .nickname {
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: 200;
+            margin-top: 5px;
+            margin-bottom: 18px;
         }
 
-        & div {
-            & .nickname {
-                font-size: 32px;
-                line-height: 40px;
-                font-weight: 200;
-                margin-top: 5px;
-                margin-bottom: 18px;
-            }
+        & .stats {
+            font-size: 20px;
+            margin-bottom: 20px;
+            padding-left: 3px;
 
-            & .stats {
-                font-size: 20px;
-                margin-bottom: 20px;
-                padding-left: 3px;
-
+            & span {
                 & span:nth-child(odd) {
-                    font-weight: 500;
+                    font-weight: 700;
                 }
 
                 & span:nth-child(even) {
                     margin-right: 30px;
                 }
             }
+        }
 
-            & .name {
-                font-size: 20px;
+        & .name {
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+
+    @media (--phonePortrait), (--phoneLandscape) {
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 40px;
+
+        & img {
+            width: 220px;
+            height: 220px;
+            margin: 0;
+        }
+
+        & div {
+            & .nickname {
+                font-size: 32px;
                 font-weight: 500;
+                text-align: center;
+            }
+
+            & .stats {
+                display: flex;
+                flex-direction: column;
+
+                & > span {
+                    margin-bottom: 9px;
+                }
             }
         }
     }
