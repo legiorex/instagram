@@ -43,7 +43,14 @@ export const loadImages = () => ({
 });
 
 export const setupFavicon = () => ({
-    plugins: [new FaviconsWebpackPlugin('./static/favicon/favicon.svg')],
+    plugins: [
+        new FaviconsWebpackPlugin({
+            logo:            './static/favicon/favicon.svg',
+            prefix:          'images/favicon/icon-[hash]',
+            statsFilename:   'iconstats-[hash].json',
+            persistentCache: true,
+        })
+    ],
 });
 
 export const setupHtml = () => ({
@@ -55,8 +62,7 @@ export const setupHtml = () => ({
             meta:     [
                 {
                     name:    'viewport',
-                    content:
-                        'user-scalable=no, width=device-width, initial-scale=1',
+                    content: 'user-scalable=no, width=device-width, initial-scale=1',
                 }
             ],
             appMountIds: ['app', 'spinner'],
