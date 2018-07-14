@@ -11,6 +11,7 @@
         width: 152px;
         height: 152px;
         border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, .1);
         margin: 0 95px 25px 70px;
         cursor: pointer;
     }
@@ -22,6 +23,20 @@
             font-weight: 200;
             margin-top: 5px;
             margin-bottom: 18px;
+
+            & span {
+                position: relative;
+
+                &:after {
+                    position: absolute;
+                    content: '';
+                    width: 18px;
+                    height: 18px;
+                    background-image: url('./assets/images/confirmed.png');
+                    top: 14px;
+                    right: -27px;
+                }
+            }
         }
 
         & .stats {
@@ -53,8 +68,8 @@
         padding-bottom: 40px;
 
         & img {
-            width: 220px;
-            height: 220px;
+            width: 77px;
+            height: 77px;
             margin: 0 0 25px 0;
         }
 
