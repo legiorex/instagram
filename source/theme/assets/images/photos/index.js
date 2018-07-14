@@ -13,7 +13,6 @@ import photo12 from './photo-12';
 import photo13 from './photo-13';
 import photo14 from './photo-14';
 import photo15 from './photo-15';
-import photo16 from './photo-16';
 import photosData from './data';
 
 const photosMap = {
@@ -32,7 +31,6 @@ const photosMap = {
     photo13,
     photo14,
     photo15,
-    photo16,
 };
 
 export const photos = photosData.map((photo) => ({

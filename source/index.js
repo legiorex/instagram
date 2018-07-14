@@ -16,6 +16,7 @@ const start = (
             color:           'white',
             fontSize:        24,
             fontWeight:      '600',
+            textAlign:       'center',
         } }>
         Добро пожаловать на воркшоп по React.
     </h1>

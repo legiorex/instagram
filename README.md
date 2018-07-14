@@ -1,5 +1,5 @@
 <h1 align="center">
-<a href="https://lectrum.io" target="_blank" rel="noopener noreferrer"> <img src="./static/favicon/favicon-github.svg" alt="Lectrum favicon" width="25" /></a> Воркшоп по React</h1>
+<a href="https://lectrum.io" target="_blank" rel="noopener noreferrer"> <img src="./static/favicon/favicon-woodsmoke.svg" alt="Lectrum favicon" width="25" /></a> Воркшоп по React</h1>
 
 <br>
 
@@ -48,7 +48,7 @@
 
 ## 📜 Содержание
 
-<img align="right" width="60" src="./static/logos/React.png">
+<img align="right" width="70" src="./static/logos/React.png">
 
 -   [🚀 Для запуска проекта выполни следующие шаги](#-Для-запуска-проекта-выполни-следующие-шаги)
 -   [🤖 Краткий обзор команд для проекта](#-Краткий-обзор-команд-для-проекта)

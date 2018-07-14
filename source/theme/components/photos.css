@@ -1,8 +1,6 @@
 .photos {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    margin: 52px auto;
+    margin: 0 auto;
     max-width: 935px;
-    padding: 0 7px;
 }

@@ -1,24 +1,24 @@
 .photo {
-    max-width: 293px;
-    max-height: 293px;
     cursor: pointer;
-    margin-bottom: 20px;
+    flex: 1 1 297px;
+    padding: 10px;
+
+    & img {
+        max-width: 100%;
+    }
 
     @media (--phonePortrait) {
-        max-width: 100px;
-        max-height: 100px;
+        flex: 1 1 100px;
         padding: 5px;
     }
 
     @media (--phoneLandscape) {
-        max-width: 130px;
-        max-height: 130px;
-        padding: 7px;
+        flex: 1 1 150px;
+        padding: 5px;
     }
 
     @media (--tabletPortrait), (--tabletLandscape) {
-        max-width: 170px;
-        max-height: 170px;
+        flex: 1 1 190px;
         padding: 7px;
     }
 }
