@@ -61,7 +61,7 @@
         }
     }
 
-    @media (--phonePortrait), (--phoneLandscape) {
+    @media (--phonePortrait), (--phoneLandscape), (--tabletPortrait), (--tabletLandscape) {
         max-width: 100%;
         flex-direction: column;
         align-items: center;
