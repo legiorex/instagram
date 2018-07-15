@@ -18,7 +18,7 @@ const start = (
             fontWeight:      '600',
             textAlign:       'center',
         } }>
-        Добро пожаловать на воркшоп по React.
+        Добро пожаловать на воркшоп по React
     </h1>
 );
 
