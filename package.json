@@ -1,6 +1,6 @@
 {
     "name": "react-trial-lesson",
-    "version": "0.2.3",
+    "version": "0.2.4",
     "author": "Dima Vakatsiienko <d.vakatsiienko@lectrum.io>",
     "private": true,
     "scripts": {
@@ -8,7 +8,7 @@
         "build:config": "webpack --config=\"./webpack/webpack.config.babel.js\" --env production --display-reasons",
         "build:dev": "cross-env-shell NODE_ENV=production BUILD_ENV=development npm run build:config",
         "build:prod": "cross-env-shell NODE_ENV=production BUILD_ENV=production npm run build:config",
-        "build:prod-github": "cross-env-shell NODE_ENV=production BUILD_ENV=production DEPLOY_TARGET=github-pages npm run build:config",
+        "build:prod-github-pages": "cross-env-shell NODE_ENV=production BUILD_ENV=production DEPLOY_TARGET=github-pages npm run build:config",
         "build:analyze": "run-s build:prod analyze",
         "analyze": "webpack-bundle-analyzer \"./build/build-stats.json\" build",
         "lint": "run-s lint:javascript lint:css",
@@ -19,7 +19,7 @@
         "test:debug": "node --inspect-brk \"./node_modules/.bin/jest\" --runInBand --config=\"./jest/jest.test.config.json\"",
         "soundcheck": "jest --config=\"./jest/jest.config.json\"",
         "prettier": "prettier-eslint --list-different \"./source/**/*.js\"; prettier-eslint --write \"./source/**/*.js\"",
-        "deploy": "run-s soundcheck build:prod-github gh-pages",
+        "deploy": "run-s soundcheck build:prod-github-pages gh-pages",
         "gh-pages": "gh-pages -d build"
     },
     "dependencies": {
