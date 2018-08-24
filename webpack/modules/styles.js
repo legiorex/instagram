@@ -1,10 +1,10 @@
 // Paths
-import { source } from '../paths';
+import { SOURCE } from '../paths';
 
 // PostCSS plugins
 import imports from 'postcss-import';
 import mqpacker from 'css-mqpacker';
-import smootheFonts from 'postcss-font-smoothing';
+import smoothFonts from 'postcss-font-smoothing';
 import modules from 'postcss-icss-selectors';
 import reporter from 'postcss-reporter';
 import postcssPresetEnv from 'postcss-preset-env';
@@ -15,13 +15,13 @@ import cssnano from 'cssnano';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
 export const loadPostCSS = () => ({
-    loader:  'postcss-loader',
+    loader: 'postcss-loader',
     options: {
-        ident:   'postcss',
-        plugins: (loader) => {
+        ident: 'postcss',
+        plugins: loader => {
             return [
                 imports({
-                    getPath:        source,
+                    getPath: SOURCE,
                     skipDuplicates: true,
                 }),
                 modules({
@@ -30,13 +30,13 @@ export const loadPostCSS = () => ({
                         : 'global',
                 }),
                 gradients(),
-                smootheFonts(),
+                smoothFonts(),
                 postcssPresetEnv({
                     stage: 0,
                 }),
                 mqpacker(),
                 reporter(),
-                cssnano()
+                cssnano(),
             ];
         },
         sourceMap: true,
@@ -47,24 +47,24 @@ export const loadDevelopmentCss = () => ({
     module: {
         rules: [
             {
-                test:    /\.css$/,
-                include: [source, /node_modules/],
-                use:     [
+                test: /\.css$/,
+                include: [SOURCE, /node_modules/],
+                use: [
                     {
-                        loader:  'style-loader',
+                        loader: 'style-loader',
                         options: {
                             sourceMap: true,
                         },
                     },
                     {
-                        loader:  'css-loader',
+                        loader: 'css-loader',
                         options: {
                             sourceMap: true,
                         },
                     },
-                    loadPostCSS()
+                    loadPostCSS(),
                 ],
-            }
+            },
         ],
     },
 });
@@ -73,25 +73,16 @@ export const loadProductionCss = () => ({
     module: {
         rules: [
             {
-                test:    /\.css$/,
-                include: [source, /node_modules/],
-                use:     [
-                    MiniCssExtractPlugin.loader,
-                    {
-                        loader:  'css-loader',
-                        options: {
-                            sourceMap: true,
-                        },
-                    },
-                    loadPostCSS()
-                ],
-            }
+                test: /\.css$/,
+                include: [SOURCE, /node_modules/],
+                use: [MiniCssExtractPlugin.loader, 'css-loader', loadPostCSS()],
+            },
         ],
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename:      'css/[contenthash].[hash:5].css',
+            filename: 'css/[contenthash].[hash:5].css',
             chunkFilename: 'css/[contenthash].[hash:5].css',
-        })
+        }),
     ],
 });

@@ -3,7 +3,7 @@ import getRepositoryName from 'git-repo-name';
 import chalk from 'chalk';
 
 // Paths
-import { source, build } from '../paths';
+import { SOURCE, BUILD } from '../paths';
 
 // Webpack modules
 import {
@@ -55,15 +55,15 @@ export const generateCommonConfiguration = () => {
         }),
         {
             entry: {
-                source,
+                SOURCE,
             },
             output: {
-                path:       build,
+                path:       BUILD,
                 publicPath: IS_DEPLOYING_TO_GITHUB_PAGES ? `/${REPOSITORY_NAME}/` : '/',
             },
             resolve: {
                 extensions: ['.mjs', '.js', '.json', '.css', '.m.css', '.png', '.jpg'],
-                modules:    [source, 'node_modules'],
+                modules:    [SOURCE, 'node_modules'],
             },
             optimization: {
                 nodeEnv: process.env.NODE_ENV,

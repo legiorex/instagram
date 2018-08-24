@@ -1,5 +1,5 @@
 // Paths
-import { source, statics } from '../paths';
+import { SOURCE, STATICS } from '../paths';
 
 // Plugins
 import FaviconsWebpackPlugin from 'favicons-webpack-plugin';
@@ -10,8 +10,8 @@ export const loadFonts = () => ({
     module: {
         rules: [
             {
-                test:    /\.eot|ttf|woff2?(\?v=\d+\.\d+\.\d+)?$/,
-                include: source,
+                test:    /\.woff2?(\?v=\d+\.\d+\.\d+)?$/,
+                include: SOURCE,
                 use:     {
                     loader:  'file-loader',
                     options: {
@@ -28,7 +28,7 @@ export const loadImages = () => ({
         rules: [
             {
                 test:    /\.jpe?g|png|svg$/,
-                include: source,
+                include: SOURCE,
                 use:     {
                     loader:  'url-loader',
                     options: {
@@ -59,7 +59,7 @@ export const setupHtml = () => ({
             inject:   false,
             template: HtmlWebpackTemplate,
             title:    'Воркшоп по React: Instagram',
-            favicon:  `${statics}/favicon/Lectrum-favicon-512x512.png`,
+            favicon:  `${STATICS}/favicon/Lectrum-favicon-512x512.png`,
             meta:     [
                 {
                     name:    'viewport',

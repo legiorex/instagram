@@ -1,5 +1,5 @@
 // Paths
-import { build } from '../paths';
+import { BUILD } from '../paths';
 
 // Plugins
 import CleanWebpackPlugin from 'clean-webpack-plugin';
@@ -33,7 +33,7 @@ export const setupBuildAnalysis = () => ({
 
 export const cleanBuildDirectory = () => ({
     plugins: [
-        new CleanWebpackPlugin(build, {
+        new CleanWebpackPlugin(BUILD, {
             allowExternal: true,
         })
     ],

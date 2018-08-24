@@ -1,12 +1,12 @@
 // Paths
-import { source } from '../paths';
+import { SOURCE } from '../paths';
 
 export const loadJavaScript = () => ({
     module: {
         rules: [
             {
                 test:    /\.m?js$/,
-                include: source,
+                include: SOURCE,
                 use:     'babel-loader',
             }
         ],

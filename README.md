@@ -5,10 +5,10 @@
 
 <div align="center">
   <!-- Package version -->
-    <img src="https://img.shields.io/github/package-json/v/lectrum/react-trial-lesson.svg?longCache=true&style=flat-square"
+    <img src="https://img.shields.io/github/package-json/v/lectrum/react-workshop.svg?longCache=true&style=flat-square"
       alt="Package version" />
   <!-- Last commit -->
-    <img src="https://img.shields.io/github/last-commit/lectrum/react-trial-lesson.svg?longCache=true&style=flat-square"
+    <img src="https://img.shields.io/github/last-commit/lectrum/react-workshop.svg?longCache=true&style=flat-square"
       alt="Last commit" />
   <!-- Dependencies -->
     <img src="https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg?longCache=true&style=flat-square"
@@ -63,8 +63,8 @@
 3. Введи в консоли `npm -v` и убедись, что установлена последняя версия npm не ниже `5.6.0`;
 4. [Скачай и установи Git](https://git-scm.com/downloads), если его нет на компьютере;
 5. Введи `git --version`, чтобы проверь версию установленного Git, должно быть не ниже `2.18.0`;
-6. Склонируй и запусти этот проект: `git clone https://github.com/Lectrum/react-trial-lesson.git`;
-7. Чтобы перейти в директорию с проекта, после клонирования выполни команду `cd react-trial-lesson`;
+6. Склонируй и запусти этот проект: `git clone https://github.com/Lectrum/react-workshop.git`;
+7. Чтобы перейти в директорию с проекта, после клонирования выполни команду `cd react-workshop`;
 8. Чтобы установить зависимости проекта, выполни команду `npm install`;
 9. Чтобы запустить проект в режиме разработки, самое время выполнить  команду`npm start`;
 10. Перейди в браузер и открой страничку [http://localhost:3000](http://localhost:3000/). Когда страничка загрузится, ты увидишь страницу с сообщением «Добро пожаловать на воркшоп по React».
@@ -91,6 +91,7 @@
 | `soundcheck`      | запустить все линтеры и тесты                                                   |
 | `prettier`        | отформатировать исходный код с помощью prettier                                 |
 | `deploy`          | задеплоить приложение на свой Github Pages                                      |
+| `commit`          | сделать [стандартизированный коммит](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines)                                      |
 
 > Заметка: после деплоя на Github Pages приложение будет доступно по адресу:\
 > https://`имя-твоего-пользователя-гитхаб`.github.io/`имя-твоего-репозитория-с-приложением`

@@ -6,7 +6,7 @@ import {
     loadProductionCss,
     setupBuildAnalysis,
     setupFavicon,
-    cleanBuildDirectory
+    cleanBuildDirectory,
 } from '../modules';
 
 // Instruments
@@ -25,13 +25,9 @@ export const generateProductionConfiguration = () =>
         cleanBuildDirectory(),
         setupBuildAnalysis(),
         {
-            mode:   'production',
+            mode: 'production',
             output: {
                 filename: 'js/[name].[chunkhash:5].js',
-            },
-            devtool:      'source-map',
-            optimization: {
-                minimize: false,
             },
         },
     );
