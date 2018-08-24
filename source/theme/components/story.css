@@ -1,0 +1,38 @@
+.story {
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 87px;
+        height: 87px;
+        cursor: pointer;
+        border: 1px solid var(--paletteColor3);
+        border-radius: 50%;
+        margin-bottom: 15px;
+
+        & img {
+            max-width: 77px;
+            border-radius: 50%;
+        }
+    }
+
+    & span {
+        font-weight: 600;
+        font-size: 14px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 87px;
+        text-align: center;
+    }
+
+    @media (--phonePortrait), (--phoneLandscape), (--tabletPortrait) {
+        margin-bottom: 15px;
+    }
+}

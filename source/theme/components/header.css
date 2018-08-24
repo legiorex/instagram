@@ -2,18 +2,21 @@
 
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     max-width: 930px;
-    margin: 25px auto 20px;
+    margin: 0 auto 0;
+    padding: 26px 40px;
+    box-sizing: content-box;
+    height: 25px;
 
     & div {
         & a {
             display: inline-block;
             width: 176px;
             height: 35px;
-            margin-top: -7px;
-            background-image: url('./assets/images/instagram-logo.png');
+            margin-top: -2px;
+            background-image: url('./assets/instagram/instagram-logo.png');
             background-repeat: no-repeat;
             background-size: 176px 35px;
             cursor: pointer;
@@ -26,10 +29,9 @@
         border: 1px solid var(--paletteColor3);
         border-radius: 3px;
         padding: 5px 10px 3px 26px;
-        margin-top: 1px;
         font-size: 14px;
         color: var(--paletteColor4);
-        background-image: url('./assets/images/search.png');
+        background-image: url('./assets/instagram/search.png');
         background-repeat: no-repeat;
         background-size: 10px 10px;
         background-position: 10px 50%;
@@ -39,7 +41,6 @@
     & nav {
         display: flex;
         justify-content: flex-end;
-        padding-top: 3px;
 
         & a {
             display: inline-block;
@@ -49,25 +50,26 @@
         }
 
         & .explore {
-            background-image: url('./assets/images/explore.png');
+            background-image: url('./assets/instagram/explore.png');
             background-size: 20px 20px;
             margin-right: 35px;
         }
 
         & .likes {
-            background-image: url('./assets/images/likes.png');
+            background-image: url('./assets/instagram/likes.png');
             background-size: 20px 20px;
             margin-right: 35px;
         }
 
         & .settings {
-            background-image: url('./assets/images/settings.png');
+            background-image: url('./assets/instagram/settings.png');
             background-size: 20px 20px;
         }
     }
 
     @media (--phonePortrait), (--phoneLandscape) {
         flex-direction: column;
+        height: auto;
 
         & div {
             display: flex;

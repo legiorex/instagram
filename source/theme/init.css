@@ -3,8 +3,11 @@
 @import './globals';
 
 /* Components */
-@import './components/content';
 @import './components/header';
-@import './components/photo';
-@import './components/photos';
+@import './components/content';
 @import './components/profile';
+@import './components/stories';
+@import './components/story';
+@import './components/photos';
+@import './components/photo';
+@import './components/footer';

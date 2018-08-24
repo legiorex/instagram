@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: roboto mono, roboto, system-ui;
+    font-family: system-ui, roboto mono, roboto;
 
     /* Зачаровать шрифты */
     font-smoothing: antialiased;

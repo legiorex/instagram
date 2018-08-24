@@ -2,27 +2,41 @@
 
 .profile {
     display: flex;
-    justify-content: center;
-    margin: 57px auto 45px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 auto;
     max-width: 930px;
     border-bottom: 1px solid var(--paletteColor6);
+    padding: 50px 60px;
 
-    & img {
-        width: 152px;
-        height: 152px;
-        border-radius: 50%;
-        border: 1px solid rgba(0, 0, 0, .1);
-        margin: 0 95px 25px 70px;
+    & .avatar {
+        box-sizing: content-box;
+        margin: 0 89px 44px 0px;
         cursor: pointer;
+        width: 161px;
+        height: 161px;
+        border: 3px inset transparent;
+        border-radius: 50%;
+        background-image: linear-gradient(white, white),
+            radial-gradient(
+                circle at top right,
+                var(--paletteColor8),
+                var(--paletteColor9)
+            );
+        background-origin: border-box;
+        background-clip: content-box, border-box;
     }
 
-    & div {
+    & .main {
+        padding-top: 6px;
+        padding-left: 3px;
+        margin-bottom: 25px;
+
         & .nickname {
+            margin-bottom: 22px;
             font-size: 32px;
-            line-height: 40px;
             font-weight: 200;
-            margin-top: 5px;
-            margin-bottom: 18px;
+            line-height: 40px;
 
             & span {
                 position: relative;
@@ -32,48 +46,49 @@
                     content: '';
                     width: 18px;
                     height: 18px;
-                    background-image: url('./assets/images/confirmed.png');
-                    top: 14px;
-                    right: -27px;
+                    background-image: url('./assets/instagram/confirmed.png');
+                    top: 11px;
+                    right: -25px;
                 }
             }
         }
 
         & .stats {
-            font-size: 20px;
-            margin-bottom: 20px;
-            padding-left: 3px;
+            margin-bottom: 25px;
 
             & span {
                 & span:nth-child(odd) {
-                    font-weight: 700;
+                    font-weight: 600;
                 }
 
                 & span:nth-child(even) {
-                    margin-right: 30px;
+                    margin-right: 40px;
                 }
             }
         }
 
         & .name {
-            font-size: 20px;
-            font-weight: 500;
+            font-size: 16px;
+            font-weight: 600;
         }
     }
 
-    @media (--phonePortrait), (--phoneLandscape), (--tabletPortrait), (--tabletLandscape) {
+    @media (--phonePortrait),
+        (--phoneLandscape),
+        (--tabletPortrait),
+        (--tabletLandscape) {
         max-width: 100%;
         flex-direction: column;
         align-items: center;
-        padding-bottom: 40px;
+        padding: 35px 15px;
 
-        & img {
+        & .avatar {
             width: 77px;
             height: 77px;
             margin: 0 0 25px 0;
         }
 
-        & div {
+        & .main {
             & .nickname {
                 font-size: 32px;
                 font-weight: 500;
