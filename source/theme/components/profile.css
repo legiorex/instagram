@@ -7,11 +7,11 @@
     margin: 0 auto;
     max-width: 930px;
     border-bottom: 1px solid var(--paletteColor6);
-    padding: 50px 60px;
+    padding: 50px 0;
 
     & .avatar {
         box-sizing: content-box;
-        margin: 0 89px 44px 0px;
+        margin: 0 92px 44px 60px;
         cursor: pointer;
         width: 161px;
         height: 161px;
@@ -28,48 +28,49 @@
     }
 
     & .main {
-        padding-top: 6px;
-        padding-left: 3px;
-        margin-bottom: 25px;
+        padding-top: 12px;
 
         & .nickname {
-            margin-bottom: 22px;
+            display: flex;
+            margin-bottom: 24px;
             font-size: 32px;
             font-weight: 200;
-            line-height: 40px;
 
-            & span {
-                position: relative;
-
-                &:after {
-                    position: absolute;
-                    content: '';
-                    width: 18px;
-                    height: 18px;
-                    background-image: url('./assets/instagram/confirmed.png');
-                    top: 11px;
-                    right: -25px;
-                }
+            &:after {
+                display: block;
+                content: '';
+                width: 18px;
+                height: 18px;
+                margin-top: 7px;
+                margin-left: 7px;
+                background-image: url('./assets/icons/confirmed.png');
             }
         }
 
         & .stats {
-            margin-bottom: 25px;
+            display: flex;
+            margin-bottom: 26px;
 
-            & span {
-                & span:nth-child(odd) {
-                    font-weight: 600;
+            & div {
+                &:not(:last-child) {
+                    margin-right: 40px;
                 }
 
-                & span:nth-child(even) {
-                    margin-right: 40px;
+                & span {
+                    display: inline-block;
+
+                    &:first-child {
+                        font-weight: 600;
+                    }
                 }
             }
         }
 
         & .name {
+            display: inline-block;
             font-size: 16px;
             font-weight: 600;
+            line-height: 1;
         }
     }
 
@@ -89,6 +90,11 @@
         }
 
         & .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+
             & .nickname {
                 font-size: 32px;
                 font-weight: 500;
@@ -98,14 +104,12 @@
             & .stats {
                 display: flex;
                 flex-direction: column;
+                align-items: center;
                 text-align: center;
 
-                & > span {
+                & div:not(:last-child) {
                     margin-bottom: 9px;
-
-                    & span:nth-child(even) {
-                        margin-right: 0;
-                    }
+                    margin-right: 0;
                 }
             }
 

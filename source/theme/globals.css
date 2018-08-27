@@ -1,11 +1,8 @@
 * {
-    box-sizing: border-box;
     outline: 0;
 }
 
 body {
-    font-family: system-ui, roboto mono, roboto;
-
     /* Зачаровать шрифты */
     font-smoothing: antialiased;
     font-variant-ligatures: none;
@@ -21,7 +18,8 @@ body {
 
     min-height: 100vh;
 
-    & section {
-        width: 100%;
+    & ul {
+        list-style-type: none;
+        padding: 0;
     }
 }

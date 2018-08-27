@@ -1,10 +1,11 @@
-.photo {
+.image {
     cursor: pointer;
     flex: 1 1 297px;
     padding: 10px;
 
     & img {
-        max-width: 100%;
+        width: 100%;
+        display: block;
     }
 
     @media (--phonePortrait) {

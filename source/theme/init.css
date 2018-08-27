@@ -1,4 +1,7 @@
-@import 'reset-css';
+/* Core */
+@import 'sanitize.css';
+
+/* Instruments */
 @import './palette';
 @import './globals';
 
@@ -8,6 +11,6 @@
 @import './components/profile';
 @import './components/stories';
 @import './components/story';
-@import './components/photos';
-@import './components/photo';
+@import './components/images';
+@import './components/image';
 @import './components/footer';

@@ -1,6 +1,7 @@
-.photos {
+.images {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
     max-width: 935px;
+    margin-bottom: 38px;
 }
