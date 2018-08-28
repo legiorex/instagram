@@ -4,6 +4,7 @@
 
 body {
     /* Зачаровать шрифты */
+    font-family: system-ui;
     font-smoothing: antialiased;
     font-variant-ligatures: none;
 
