@@ -1,11 +1,11 @@
 {
     "name": "react-workshop",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "author": "Dima Vakatsiienko <dvakatsiienko@lectrum.io>",
     "private": true,
     "dependencies": {
-        "react": "16.4.2",
-        "react-dom": "16.4.2",
+        "react": "16.5.0",
+        "react-dom": "16.5.0",
         "sanitize.css": "7.0.3"
     }
 }
