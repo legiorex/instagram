@@ -1,7 +1,7 @@
 {
-    "@lectrum/generator-ui": {
-        "isInitialized": false,
-        "repositoryOwner": "lectrum",
-        "repositoryName": "react-workshop"
-    }
+  "@lectrum/generator-ui": {
+    "isInitialized": false,
+    "repositoryOwner": "lectrum",
+    "repositoryName": "react-workshop"
+  }
 }
