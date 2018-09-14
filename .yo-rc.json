@@ -1,6 +1,7 @@
 {
   "@lectrum/generator-ui": {
-    "isInitialized": false,
+    "initialized": false,
+    "educational": true,
     "repositoryOwner": "lectrum",
     "repositoryName": "react-workshop"
   }
