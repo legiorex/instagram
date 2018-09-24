@@ -7,10 +7,5 @@
         "react": "16.5.2",
         "react-dom": "16.5.2",
         "sanitize.css": "7.0.3"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:Lectrum/react-workshop.git"
-    },
-    "homepage": "https://github.com/Lectrum/react-workshop.git"
+    }
 }
