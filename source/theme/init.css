@@ -6,6 +6,7 @@
 @import './globals';
 
 /* Components */
+@import './components/start';
 @import './components/header';
 @import './components/content';
 @import './components/profile';
