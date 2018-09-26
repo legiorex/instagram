@@ -71,7 +71,7 @@ npm install -g yo @lectrum/generator-ui
 6. Выполни в консоли **`git --version`**, чтобы проверь версию установленного Git, должно быть не ниже **`2.18.0`**;
 7. Важно:
 + ❗️ Если ты пользователь `Ubuntu`, выполни в консоли **`sudo apt install libssl-dev`**;
-+ ❗️ Если ты пользователь `MacOS`, выполни в консоли **`sudo xcode-select --install`**.
++ ❗️ Если ты пользователь `MacOS`, установи [Homebrew](https://brew.sh/) и выполни в консоли **`brew install libgcrypt`**.
 8. Склонируй этот проект:
 
 ```bash
