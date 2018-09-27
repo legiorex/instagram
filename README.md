@@ -66,15 +66,15 @@
 npm install -g yo @lectrum/generator-ui
 ```
 
-> Если ты пользователь Windows, [настрой себе
-терминал](https://github.com/Lectrum/FAQ#%D0%AF-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C-windows-%D0%9A%D0%B0%D0%BA-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B8%D1%82%D1%8C-%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%B0%D0%BB-%D0%B4%D0%BB%D1%8F-%D1%83%D0%B4%D0%BE%D0%B1%D0%BD%D0%BE%D0%B9-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B)
+> Если ты пользователь Windows, [настрой себе терминал](https://github.com/Lectrum/FAQ#%D0%AF-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C-windows-%D0%9A%D0%B0%D0%BA-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B8%D1%82%D1%8C-%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%B0%D0%BB-%D0%B4%D0%BB%D1%8F-%D1%83%D0%B4%D0%BE%D0%B1%D0%BD%D0%BE%D0%B9-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B)
 для удобой работы.
 
 5. [Скачай и установи Git](https://git-scm.com/downloads), если его нет на компьютере;
 6. Выполни в консоли **`git --version`**, чтобы проверь версию установленного Git, должно быть не ниже **`2.18.0`**;
 7. Важно:
-+ ❗️ Если ты пользователь `MacOS`, установи [Homebrew](https://brew.sh/) и выполни в консоли **`brew install
-libgcrypt`**.
++ ❗️ Если ты пользователь `MacOS`:
+++ Выполни в консоли `xcode-select --install`;
+++ Затем установи [Homebrew](https://brew.sh/) и выполни в консоли **`brew install libgcrypt`**.
 + ❗️ Если ты пользователь `Ubuntu`, выполни в консоли **`sudo apt install libssl-dev`**;
 8. Склонируй этот проект:
 
