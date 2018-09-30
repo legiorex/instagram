@@ -54,7 +54,7 @@
 
 > Список поддерживаемых нами операционных систем [можно найти здесь](https://github.com/Lectrum/FAQ#%D0%9A%D0%B0%D0%BA%D0%B8%D0%B5-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%B8%D0%B2%D0%B0%D1%8E%D1%82%D1%81%D1%8F-%D0%BE%D0%B1%D1%83%D1%87%D0%B0%D1%8E%D1%89%D0%B8%D0%BC%D0%B8-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8-%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8-lectrum).
 
-1. Скачай и установи последнюю LTS-версию **`Node.js`**:
+1. Скачай и установи последнюю **`LTS-версию Node.js`**:
 + Пользователям **`MacOS`** и **`Ubuntu`** нужно [установить **`nvm`**](https://github.com/creationix/nvm#installation), а затем выполнить в консоли `nvm install 8.12.0`.\;
 > ❗️ Внимательно прочитай каждый шаг [инструкции по установке nvm](https://github.com/creationix/nvm#installation), там расписаны решения всех возможных проблем.
 + Пользователям **`Windows`** **`Node.js`** можно установить [обычным установщиком с официального сайта](https://nodejs.org/en/).
