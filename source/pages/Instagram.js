@@ -1,11 +1,14 @@
 import React from 'react';
 import Header from '../components/Header';
-export default class Instagram extends React.Component{
+import Content from '../components/Content';
+import Footer from '../components/Footer';
+export default class Instagram extends React.Component {
     render (){
         return (
             <>
                 <Header />
-                <h1></h1>
+                <Content />
+                <Footer />
             </>
         );
     }

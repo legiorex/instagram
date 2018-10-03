@@ -1,10 +1,12 @@
 import React from 'react';
+import Profile from './Profile';
+import Images from './Images';
 export default class Content extends React.Component{
     render (){
         return (
             <div className='content'>
-                <div>Profile</div>
-                <div>Images</div>
+                <Profile />
+                <Images />
             </div>
         );
     }
